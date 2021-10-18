@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	double a = 3;
+	double b = 4;
+	double c = 5;
+	double length= a + b + c;
+	double p = length / 2.0;
+	double area1 = p * (p - a) * (p - b) * (p - c);
+	double area = sqrt(area1);
+	printf("周长%lf 面积%lf \n", length, area); 
+	return 0;
+}
